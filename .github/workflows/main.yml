@@ -7,5 +7,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: pwd
       - run: ls
-      - run: unset VERILATOR_ROOT && verilator -Wall --binary --trace mux.v tb.v
-      - run: ./obj_dir/Vmux
+      - run: unset VERILATOR_ROOT && make all
