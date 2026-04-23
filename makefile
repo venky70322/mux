@@ -6,5 +6,3 @@ run:
 
 all: build run
 
-clean:
-	rm -rf obj_dir

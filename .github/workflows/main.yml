@@ -1,7 +1,7 @@
 name: MUX CI
 on: push
 jobs:
-  test:
+  simulate:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
