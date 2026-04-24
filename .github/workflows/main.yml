@@ -15,9 +15,8 @@ jobs:
       - run: pwd
       - run: ls
       - run: unset VERILATOR_ROOT && make all
-      - run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git checkout main
-          git merge $GITHUB_REF_NAME
-          git push origin main
+      - run: git config --global user.name "github-actions"
+      - run: git config --global user.email "actions@github.com"
+      - run: git checkout main
+      - run: git merge $GITHUB_REF_NAME
+      - run: git push origin main
